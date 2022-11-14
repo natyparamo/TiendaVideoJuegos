@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:fitsSystemWindows="true"
     android:layout_height="match_parent"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
   <LinearLayout
@@ -18,27 +19,70 @@
           android:src="@drawable/imageonline_co_transparentimage"
           android:layout_gravity="center"/>
 
-      <com.google.android.material.textfield.TextInputLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-          <com.google.android.material.textfield.TextInputEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/white"
-              android:hint="Correo Electronico"
-              android:inputType="textEmailAddress"/>
-      </com.google.android.material.textfield.TextInputLayout>
 
-      <com.google.android.material.textfield.TextInputLayout
+      <LinearLayout
           android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-          <com.google.android.material.textfield.TextInputEditText
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="50dp">
+
+          <ImageView
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@drawable/correo"
+              android:layout_marginTop="5dp"
+              />
+
+          <com.google.android.material.textfield.TextInputLayout
+
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/white"
-              android:hint="Contaseña"
-              android:inputType="text"/>
-      </com.google.android.material.textfield.TextInputLayout>
+              android:layout_height="40dp">
+              android:layout_marginTop="10dp"
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/transparente"
+                  android:textColorHint="@color/black"
+                  android:textStyle="normal"
+                  android:hint="Correo Electronico"
+                  android:inputType="textEmailAddress"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="10dp">
+
+          <ImageView
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:src="@drawable/candado"
+              android:layout_marginTop="10dp"
+              />
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/transparente"
+                  android:textStyle="normal"
+                  android:hint="Contaseña"
+                  android:inputType="text"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+      </LinearLayout>
+
+
+
+
 
       <Button
           android:layout_width="match_parent"
